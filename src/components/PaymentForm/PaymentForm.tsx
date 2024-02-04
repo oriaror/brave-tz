@@ -49,7 +49,8 @@ const PaymentForm = ({ name }: IPaymentForm) => {
     setResponse(null)
     const resp = await fetch(process.env.DB_HOST + "/api/pay", {
       method: "POST",
-      body: JSON.stringify(formData)
+      body: JSON.stringify(formData),
+      cache: 'no-store'
     })
     const result = await resp.json()
     if (result.status === StatusResponce.SUCCESS) {
