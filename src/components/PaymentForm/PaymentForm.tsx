@@ -46,9 +46,9 @@ const PaymentForm = ({ name }: IPaymentForm) => {
   }
 
   const res = async () => {
-    console.log(process.env.DB_HOST + "/api/pay")
+    console.log(process.env.NEXT_PUBLIC_DB_HOST + "/api/pay")
     setResponse(null)
-    const resp = await fetch(process.env.DB_HOST + "/api/pay", {
+    const resp = await fetch(process.env.NEXT_PUBLIC_DB_HOST + "/api/pay", {
       method: "POST",
       body: JSON.stringify(formData),
       cache: 'no-store'
