@@ -1,4 +1,4 @@
-https://brave-tz.vercel.app/
+Ссылка на приложение: https://brave-tz.vercel.app/
 
 Задача №1
 
