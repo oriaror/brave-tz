@@ -27,6 +27,7 @@ export default async function Home() {
       <Content>
         {data.map((item) =>
           <Operator
+            key={item.id}
             id={item.id}
             name={item.name}
             img={item.img}
