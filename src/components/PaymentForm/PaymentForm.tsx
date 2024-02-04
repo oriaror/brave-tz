@@ -3,9 +3,7 @@
 import { FormWrapper, ButtonPay, StyledName, InputWrapperCom, Info, ContentFormWrapper } from "./PaymentFormStyles";
 import { PhoneInput } from "./inputComponents/PhoneInput/PhoneInput";
 import { PayInput } from "./inputComponents/PayInput/PayInput";
-import { ResponseModal } from "../ResponseModal/ResponseModal";
 import { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
 import { InfoComponent } from "../InfoComponent/InfoComponent";
 
 interface IPaymentForm {
