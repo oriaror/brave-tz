@@ -9,7 +9,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ status: 'Success' }, {
         status: 200,
       })
-    } return NextResponse.json({ status: 'Failed' }, { status: 400 })
+    } return NextResponse.json({ status: 'Failed' }, { status: 503 })
   })
 }
 
