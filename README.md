@@ -7,7 +7,7 @@ function func(string, a, b) {
   let aIndex = -1;
   let bIndex = -1;
 
-  for (let i = 0; i < string.length; i++) {
+  for (let i = string.length - 1; i>0; i--) {
     if (string[i] === a) {
       aIndex = i;
     }
